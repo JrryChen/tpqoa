@@ -215,7 +215,7 @@ class tpqoa(object):
             multiplier = float("".join(filter(str.isdigit, granularity)))
             if granularity.startswith('S'):
                 # freq = '1h'
-                freq = f"{int(MAX_REQUEST_COUNT * multiplier / float(3600))}H"
+                freq = f"{int(MAX_REQUEST_COUNT * multiplier / float(3600))}h"
             else:
                 # freq = 'D'
                 freq = f"{int(MAX_REQUEST_COUNT * multiplier / float(1440))}D"
